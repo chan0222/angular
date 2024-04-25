@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>입력받기</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>이름을 입력하세요</mat-label>
+        <input matInput [(ngModel)]="userName">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-button [mat-dialog-close]="userName">확인</button>
+    <button mat-button mat-dialog-close>취소</button>
+
+</div>
